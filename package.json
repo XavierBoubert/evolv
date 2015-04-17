@@ -1,0 +1,34 @@
+{
+  "name": "evolv",
+  "version": "0.1.0",
+  "description": "Apply new versions of your project instance",
+  "homepage": "https://github.com/XavierBoubert/evolv",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "keywords": [
+    "evolv",
+    "update",
+    "upgrade",
+    "versions"
+  ],
+  "author": "Xavier Boubert <xavier@boubert.fr>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:XavierBoubert/evolv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XavierBoubert/evolv/issues"
+  },
+  "dependencies": {
+    "glob": "^5.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-uglifyjs": "^0.6.1",
+    "gulp-insert": "^0.4.0"
+  }
+}

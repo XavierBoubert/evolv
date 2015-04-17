@@ -10,12 +10,10 @@ Apply new versions of your project instance
 
 ## Installation
 
-Use the CDN version:
+With npm:
 ```HTML
-<script src="https://cdnjs.cloudflare.com/ajax/libs/evolv/0.1.0/evolv.min.js"></script>
+npm install evolv
 ```
-
-Or copy the [dist](https://github.com/XavierBoubert/evolv/tree/master/dist) folder into your project and include ```evolv.js``` or ```evolv.min.js``` (production) file in your HTML page or your node project.
 
 ## How to use
 

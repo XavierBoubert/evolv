@@ -11,7 +11,7 @@ Apply new versions of your project instance
 ## Installation
 
 With npm:
-```HTML
+```
 npm install evolv
 ```
 

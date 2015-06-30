@@ -73,7 +73,7 @@ module.exports = function(options, actualVersion, callback) {
 
   actualVersion = actualVersion || '0.0.0';
 
-  var files = glob.sync(path.join(options.path, '**', 'version-*.js'));
+  var files = glob.sync(path.join(options.path, '**', '*version-*.js'));
 
   log('\n--- EVOLV ---\n');
   log('► From version: ' + actualVersion);

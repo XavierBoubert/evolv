@@ -24,6 +24,11 @@ module.exports = function(options, actualVersion, callback) {
     versionA = versionA.split('.');
     versionB = versionB.split('.');
 
+    for (var i = 0; i < 3; i++) {
+      versionA[i] = versionA[i] ? parseInt(versionA[i], 10) : 0;
+      versionB[i] = versionB[i] ? parseInt(versionB[i], 10) : 0;
+    }
+
     return !!(
       versionA[0] > versionB[0] ||
       (versionA[0] == versionB[0] && versionA[1] > versionB[1]) ||
@@ -74,6 +79,15 @@ module.exports = function(options, actualVersion, callback) {
   actualVersion = actualVersion || '0.0.0';
 
   var files = glob.sync(path.join(options.path, '**', '*version-*.js'));
+
+  files.sort(function(a, b) {
+    var startA = a.indexOf('version-') + 'version-'.length,
+        startB = b.indexOf('version-') + 'version-'.length,
+        versionA = a.substr(startA, a.length - startA - 3),
+        versionB = b.substr(startB, b.length - startB - 3);
+
+    return versionGreaterThan(versionA, versionB);
+  });
 
   log('\n--- EVOLV ---\n');
   log('► From version: ' + actualVersion);

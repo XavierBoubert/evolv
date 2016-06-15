@@ -7,22 +7,30 @@ Versions details history. For each version you can find:
 * Link to the release branch
 * All of the modifications details
 
-<a name="0.1.3"></a>
-# 0.1.3 (2015-09-04)
+<a name="0.1.4"></a>
+# 0.1.4 (2016-06-15)
 
-[Release 0.1.3](https://github.com/XavierBoubert/evolv/releases/tag/0.1.3) -
-[Branch release/0.1.3](https://github.com/XavierBoubert/evolv/tree/0.1.3)
+[Release 0.1.4](https://github.com/XavierBoubert/evolv/releases/tag/0.1.4)
 
 ### Hotfixes
 
 - **evolv**
-  - Order versions execution.
+  - Ordering version files.
+
+<a name="0.1.3"></a>
+# 0.1.3 (2015-09-04)
+
+[Release 0.1.3](https://github.com/XavierBoubert/evolv/releases/tag/0.1.3)
+
+### Hotfixes
+
+- **evolv**
+  - Ordering version files.
 
 <a name="0.1.2"></a>
 # 0.1.2 (2015-06-30)
 
-[Release 0.1.2](https://github.com/XavierBoubert/evolv/releases/tag/0.1.2) -
-[Branch release/0.1.2](https://github.com/XavierBoubert/evolv/tree/0.1.2)
+[Release 0.1.2](https://github.com/XavierBoubert/evolv/releases/tag/0.1.2)
 
 ### Breaking changes
 
@@ -32,8 +40,7 @@ Versions details history. For each version you can find:
 <a name="0.1.1"></a>
 # 0.1.1 (2015-04-17)
 
-[Release 0.1.1](https://github.com/XavierBoubert/evolv/releases/tag/0.1.1) -
-[Branch release/0.1.1](https://github.com/XavierBoubert/evolv/tree/0.1.1)
+[Release 0.1.1](https://github.com/XavierBoubert/evolv/releases/tag/0.1.1)
 
 ### Breaking changes
 
@@ -44,8 +51,7 @@ Versions details history. For each version you can find:
 <a name="0.1.0"></a>
 # 0.1.0 (2015-04-17)
 
-[Release 0.1.0](https://github.com/XavierBoubert/evolv/releases/tag/0.1.0) -
-[Branch release/0.1.0](https://github.com/XavierBoubert/evolv/tree/0.1.0)
+[Release 0.1.0](https://github.com/XavierBoubert/evolv/releases/tag/0.1.0)
 
 ### Breaking changes
 

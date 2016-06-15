@@ -1,6 +1,6 @@
 {
   "name": "evolv",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Apply new versions of your project instance",
   "homepage": "https://github.com/XavierBoubert/evolv",
   "main": "evolv.js",

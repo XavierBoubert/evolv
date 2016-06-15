@@ -27,13 +27,16 @@ module.exports = function(options, actualVersion, callback) {
     for (var i = 0; i < 3; i++) {
       versionA[i] = versionA[i] ? parseInt(versionA[i], 10) : 0;
       versionB[i] = versionB[i] ? parseInt(versionB[i], 10) : 0;
+
+      if (versionA[i] > versionB[i]) {
+        return 1;
+      }
+      else if (versionA[i] < versionB[i]) {
+        return -1;
+      }
     }
 
-    return !!(
-      versionA[0] > versionB[0] ||
-      (versionA[0] == versionB[0] && versionA[1] > versionB[1]) ||
-      (versionA[0] == versionB[0] && versionA[1] == versionB[1] && versionA[2] > versionB[2])
-    );
+    return 0;
   }
 
   function loopEvolveFiles(actualVersion, files, done, i, newVersion) {
@@ -49,7 +52,7 @@ module.exports = function(options, actualVersion, callback) {
 
     log('► Task version ' + version + '... ', true);
 
-    if (versionGreaterThan(version, actualVersion)) {
+    if (versionGreaterThan(version, actualVersion) > 0) {
       var task = require(file);
 
       if (task) {
@@ -67,7 +70,7 @@ module.exports = function(options, actualVersion, callback) {
       return;
     }
 
-    if (versionGreaterThan(version, newVersion)) {
+    if (versionGreaterThan(version, newVersion) > 0) {
       newVersion = version;
     }
 
@@ -88,6 +91,8 @@ module.exports = function(options, actualVersion, callback) {
 
     return versionGreaterThan(versionA, versionB);
   });
+
+  console.log(files);
 
   log('\n--- EVOLV ---\n');
   log('► From version: ' + actualVersion);

@@ -92,8 +92,6 @@ module.exports = function(options, actualVersion, callback) {
     return versionGreaterThan(versionA, versionB);
   });
 
-  console.log(files);
-
   log('\n--- EVOLV ---\n');
   log('► From version: ' + actualVersion);
 

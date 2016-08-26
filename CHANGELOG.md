@@ -7,6 +7,16 @@ Versions details history. For each version you can find:
 * Link to the release branch
 * All of the modifications details
 
+<a name="0.1.5"></a>
+# 0.1.5 (2016-08-26)
+
+[Release 0.1.5](https://github.com/XavierBoubert/evolv/releases/tag/0.1.5)
+
+### Hotfixes
+
+- **evolv**
+  - Remove wrong console.log. My bad.
+
 <a name="0.1.4"></a>
 # 0.1.4 (2016-06-15)
 
